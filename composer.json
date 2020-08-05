@@ -1,0 +1,27 @@
+{
+    "name": "nztim/markdown",
+    "description": "Markdown helper for Laravel",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "league/commonmark": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NZTim\\Markdown\\": "src/",
+            "NZTim\\Markdown\\Tests\\": "tests/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Tim",
+            "email": "tim@nztim.com"
+        }
+    ]
+}
