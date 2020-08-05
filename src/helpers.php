@@ -1,6 +1,10 @@
 <?php
 
+use NZTim\Markdown\ParsedownExtraWithYouTubeEmbed;
+
 function markdown(string $content): string
 {
-    return app('nztim-markdown-converter')->convertToHtml($content);
+    /** @var ParsedownExtraWithYouTubeEmbed $converter */
+    $converter = app('nztim-markdown-converter');
+    return $converter->text($content);
 }
